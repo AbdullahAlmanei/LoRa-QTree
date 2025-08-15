@@ -1,0 +1,39 @@
+{
+    "name": "LoRa Mesh Testbed",
+    "builds": [
+      {
+        "id": "tbeam-s3-node",
+        "chipFamily": "ESP32-S3",
+        "version": "node-current",
+        "name": "T-Beam S3 – Node",
+        "parts": [
+          { "path": "tbeam-s3-node/bootloader.bin", "offset": "0x0" },
+          { "path": "tbeam-s3-node/partitions.bin", "offset": "0x8000" },
+          { "path": "tbeam-s3-node/firmware.bin",   "offset": "0x10000" }
+        ]
+      },
+      {
+        "id": "tbeam-s3-gateway",
+        "chipFamily": "ESP32-S3",
+        "version": "gw-current",
+        "name": "T-Beam S3 – Gateway",
+        "parts": [
+          { "path": "tbeam-s3-gateway/bootloader.bin", "offset": "0x0" },
+          { "path": "tbeam-s3-gateway/partitions.bin", "offset": "0x8000" },
+          { "path": "tbeam-s3-gateway/firmware.bin",   "offset": "0x10000" }
+        ]
+      },
+      {
+        "id": "heltec-v3-node",
+        "chipFamily": "ESP32-S3",
+        "version": "node-current",
+        "name": "Heltec WiFi LoRa 32 V3 – Node",
+        "parts": [
+          { "path": "heltec-v3-node/bootloader.bin", "offset": "0x0" },
+          { "path": "heltec-v3-node/partitions.bin", "offset": "0x8000" },
+          { "path": "heltec-v3-node/firmware.bin",   "offset": "0x10000" }
+        ]
+      }
+    ]
+  }
+  
